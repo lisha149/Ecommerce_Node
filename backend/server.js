@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 
+//endpoint to validate sever setup
 app.get("/", (req, res) => {
   res.send("API is working....");
 });
