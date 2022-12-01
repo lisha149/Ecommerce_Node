@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+.App {
+  text-align: center;
+}
+
+.btn {
+  margin: 2px;
+}
+.divbtn {
+  float: left;
+}
+
+thead {
+  background-color: #2b2b2b;
+  color: #969696;
+  font-size: 20px;
+  font-weight: 700;
+}
+tbody {
+  font-size: 18px;
+}
