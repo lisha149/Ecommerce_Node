@@ -16,15 +16,16 @@ app.get("/", (req, res) => {
 });
 
 //endpoint to get all the products
-app.get("/api/products", (req, res) => {
-  fs.readFile(__dirname + "/" + "products.json", "utf8", (err, products) => {
-    if (err) {
-      res.status(404).json({ message: err });
-    }
-    console.log(products);
-    res.status(200).send(products);
-  });
-});
+//using json-server to access and modify resources,
+// app.get("/api/products", (req, res) => {
+//   fs.readFile(__dirname + "/" + "products.json", "utf8", (err, products) => {
+//     if (err) {
+//       res.status(404).json({ message: err });
+//     }
+//     // console.log(products);
+//     res.status(200).send(products);
+//   });
+// });
 
 const PORT = 5000;
 app.listen(PORT, () =>
