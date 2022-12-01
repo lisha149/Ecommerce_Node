@@ -1,64 +1,97 @@
-{
-  "products": [
-    {
-      "id": 1,
-      "product_name": "marami plain Decorative Cushion",
-      "category_name": "Furniture",
-      "description": "Key Features of marami plain Decorative Cushion Outer Material: velvet Filling Material: Cotton Height: 13 cm,Specifications of marami plain Decorative Cushion (Yellow) General External Material velvet Brand marami Type Decorative Cushion Model Name smiley pillow Filling Material Cotton Model ID CUMA2046 Color Yellow Dimensions Length 13 cm Width 13 cm Depth 4 cm",
-      "created_by": "Anna Back",
-      "status": "in_stock",
-      "created_at": "2022-11-11T03:55:33.567Z",
-      "updated_at": "2022-11-11T04:09:29.361Z"
-    },
-    {
-      "id": 2,
-      "product_name": "SKY TRENDS White Sipper 600 ml Water Bottle",
-      "category_name": "Home Appliances",
-      "description": "SKY TRENDS White Sipper 600 ml Water Bottle (Set of 1, White) Price: Rs. 429",
-      "created_by": "John Doe",
-      "status": "in_stock",
-      "created_at": "2022-11-11T03:55:33.567Z",
-      "updated_at": "2022-11-11T04:09:29.361Z"
-    },
-    {
-      "id": 3,
-      "product_name": "Ohanna Sports 800 ml Water Bottle",
-      "category_name": "Home Appliances",
-      "description": "Key Features of Ohanna Sports 800 ml Water Bottle Sports Durable Water Bottle Comfortably Carry Trendy Easy Filling BPA free water bottle 100% Recyclable Designed for better utility Durable for home kitchen or personal utility",
-      "created_by": "Taylor Shrm",
-      "status": "out_of_stock",
-      "created_at": "2022-11-11T03:55:33.567Z",
-      "updated_at": "2022-11-11T04:09:29.361Z"
-    },
-    {
-      "id": 4,
-      "product_name": "LGC Women's Black, Pink Capri",
-      "category_name": "Women's Clothing",
-      "description": "Specifications of LGC Women's Black, Pink Capri Capri Details Number of Contents in Sales Package Pack of 2 Fabric Viscose Lycra Blend Fit Regular Fly Elastic General Details Pattern Solid Ideal",
-      "created_by": "Nick Swift",
-      "status": "in_stock",
-      "created_at": "2022-11-29T03:55:33.567Z",
-      "updated_at": "2022-11-29T04:09:29.361Z"
-    },
-    {
-      "id": 5,
-      "product_name": "Table",
-      "category_name": "Furniture",
-      "description": "Furniture with a raised flat top and is supported most commonly by 1 or 4 legs, used as a surface for working at, eating from or on which to place things. ",
-      "created_by": "David Brack",
-      "status": "in_stock",
-      "created_at": "2022-11-11T03:55:33.567Z",
-      "updated_at": "2022-11-11T04:09:29.361Z"
-    },
-    {
-      "id": 6,
-      "product_name": "Casio Black Analog Watch For Men",
-      "category_name": "Accessories",
-      "description": "MTP-VD300GL-1EUDF",
-      "created_by": "Sam",
-      "status": "out_of_stock",
-      "created_at": "2022-11-11T03:55:33.567Z",
-      "updated_at": "2022-11-11T04:09:29.361Z"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "product_name": "marami plain Decorative Cushion",
+    "category_name": "Furniture",
+    "description": "Key Features of marami plain Decorative Cushion Outer Material: velvet Filling Material: Cotton Height: 13 cm,Specifications of marami plain Decorative Cushion (Yellow) General External Material velvet Brand marami Type Decorative Cushion Model Name smiley pillow Filling Material Cotton Model ID CUMA2046 Color Yellow Dimensions Length 13 cm Width 13 cm Depth 4 cm",
+    "created_by": "Anna Back",
+    "status": "in_stock",
+    "created_at": "2022-11-11T03:55:33.567Z",
+    "updated_at": "2022-11-11T04:09:29.361Z"
+  },
+  {
+    "id": 2,
+    "product_name": "SKY TRENDS White Sipper 600 ml Water Bottle",
+    "category_name": "Home Appliances",
+    "description": "SKY TRENDS White Sipper 600 ml Water Bottle (Set of 1, White) Price: Rs. 429",
+    "created_by": "John Doe",
+    "status": "in_stock",
+    "created_at": "2022-11-11T03:55:33.567Z",
+    "updated_at": "2022-11-11T04:09:29.361Z"
+  },
+  {
+    "id": 3,
+    "product_name": "Ohanna Sports 800 ml Water Bottle",
+    "category_name": "Home Appliances",
+    "description": "Key Features of Ohanna Sports 800 ml Water Bottle Sports Durable Water Bottle Comfortably Carry Trendy Easy Filling BPA free water bottle 100% Recyclable Designed for better utility Durable for home kitchen or personal utility",
+    "created_by": "Taylor Shrm",
+    "status": "out_of_stock",
+    "created_at": "2022-11-11T03:55:33.567Z",
+    "updated_at": "2022-11-11T04:09:29.361Z"
+  },
+  {
+    "id": 4,
+    "product_name": "LGC Women's Black, Pink Capri",
+    "category_name": "Women's Clothing",
+    "description": "Specifications of LGC Women's Black, Pink Capri Capri Details Number of Contents in Sales Package Pack of 2 Fabric Viscose Lycra Blend Fit Regular Fly Elastic General Details Pattern Solid Ideal",
+    "created_by": "Nick Swift",
+    "status": "in_stock",
+    "created_at": "2022-11-29T03:55:33.567Z",
+    "updated_at": "2022-11-29T04:09:29.361Z"
+  },
+  {
+    "id": 5,
+    "product_name": "Table",
+    "category_name": "Furniture",
+    "description": "Furniture with a raised flat top and is supported most commonly by 1 or 4 legs, used as a surface for working at, eating from or on which to place things. ",
+    "created_by": "David Brack",
+    "status": "in_stock",
+    "created_at": "2022-11-11T03:55:33.567Z",
+    "updated_at": "2022-11-11T04:09:29.361Z"
+  },
+  {
+    "id": 6,
+    "product_name": "Casio Black Analog Watch For Men",
+    "category_name": "Accessories",
+    "description": "MTP-VD300GL-1EUDF",
+    "created_by": "Sam",
+    "status": "out_of_stock",
+    "created_at": "2022-11-11T03:55:33.567Z",
+    "updated_at": "2022-11-11T04:09:29.361Z"
+  },
+  {
+    "id": 7,
+    "product_name": "Butterfly Choker",
+    "category_name": "Accessories",
+    "description": "Gold Chain",
+    "created_by": "John",
+    "status": "in_stock"
+  },
+  {
+    "id": 8,
+    "product_name": "marami plain Decorative Blanket",
+    "category_name": "Furniture",
+    "description": "Fur very soft washable blanket",
+    "created_by": "Anna Back",
+    "status": "in_stock",
+    "created_at": "2022-11-11T03:55:33.567Z",
+    "updated_at": "2022-11-11T04:09:29.361Z"
+  },
+  {
+    "id": 9,
+    "product_name": "marami Fiber Decorative Blanket",
+    "category_name": "Furniture",
+    "description": "Fur very soft washable fiber blanket",
+    "created_by": "Anna Back",
+    "status": "in_stock",
+    "created_at": "2022-11-11T03:55:33.567Z",
+    "updated_at": "2022-11-11T04:09:29.361Z"
+  },
+  {
+    "product_name": "Gaming Chair",
+    "category_name": "Furniture",
+    "description": "chair with comfortable attached cushion ",
+    "created_by": "Dom",
+    "status": "out_of_stock"
+  }
+]
