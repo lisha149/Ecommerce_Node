@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ProductList = () => {
   const [data, dataChange] = useState();
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("http://localhost:5000/products")
       .then((res) => {
         return res.json();
       })
