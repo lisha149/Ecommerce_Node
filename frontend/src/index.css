@@ -22,3 +22,71 @@
 .light-color {
   color: #969696;
 }
+table tbody tr:nth-child(even) {
+  background-color: #969696;
+}
+/*responsive*/
+@media (max-width: 376px) {
+  .leftbtn {
+    width: 100%;
+  }
+  table thead {
+    display: none;
+  }
+  table,
+  table tbody,
+  table tr,
+  table td {
+    display: block;
+    width: 100%;
+  }
+  table td {
+    position: relative;
+    text-align: right;
+    font-size: 10px;
+  }
+
+  td:nth-child(1)::before {
+    content: "Name";
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 12px;
+    font-weight: 700;
+    text-align: left;
+  }
+  td:nth-child(2)::before {
+    content: "Category";
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 12px;
+    font-weight: 700;
+    text-align: left;
+  }
+  td:nth-child(3)::before {
+    content: "Description";
+    position: absolute;
+    left: 0;
+    width: 30%;
+    padding-left: 12px;
+    font-weight: 700;
+    text-align: left;
+  }
+  td:nth-child(4)::before {
+    content: "Status";
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 12px;
+    font-weight: 700;
+    text-align: left;
+  }
+  td {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    padding-right: 12px;
+    text-align: justify;
+  }
+}

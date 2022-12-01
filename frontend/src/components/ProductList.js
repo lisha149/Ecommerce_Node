@@ -25,27 +25,29 @@ const ProductList = () => {
         </div>
         <div className="card-body">
           <div className="leftbtn">
-            <Link to="products/create" className="btn btn-success">
+            <Link to="products/create" className="btn btn-success btn-sm">
               Add new product (+)
             </Link>
+            <hr />
           </div>
+
           <table className="table table-bordered">
-            <thead>
+            <thead id="table-head">
               <tr>
-                <td>Name</td>
-                <td>Category</td>
-                <td>Desription</td>
-                <td>Status</td>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Desription</th>
+                <th>Status</th>
               </tr>
             </thead>
             <tbody>
               {data &&
                 data.map((item) => (
                   <tr key={item.id}>
-                    <td>{item.product_name}</td>
-                    <td>{item.category_name}</td>
-                    <td style={{ textAlign: "justify" }}>{item.description}</td>
-                    <td>{item.status}</td>
+                    <td data-label="Name">{item.product_name}</td>
+                    <td data-label="Category">{item.category_name}</td>
+                    <td data-label="Description">{item.description}</td>
+                    <td data-label="Status">{item.status}</td>
                   </tr>
                 ))}
             </tbody>
