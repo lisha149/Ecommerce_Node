@@ -24,7 +24,7 @@ const ProductList = () => {
           <h2>Product List</h2>
         </div>
         <div className="card-body">
-          <div className="divbtn">
+          <div className="leftbtn">
             <Link to="products/create" className="btn btn-success">
               Add new product (+)
             </Link>
@@ -45,9 +45,9 @@ const ProductList = () => {
                   <tr key={item.id}>
                     <td>{item.product_name}</td>
                     <td>{item.category_name}</td>
-                    <td>{item.description}</td>
+                    <td style={{ textAlign: "justify" }}>{item.description}</td>
                     <td>{item.status}</td>
-                    <td>
+                    <td style={{ textAlign: "justify" }}>
                       <a className="btn btn-success">Edit</a>
                       <a className="btn btn-danger">Remove</a>
                     </td>
