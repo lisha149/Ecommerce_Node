@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const ProductList = () => {
   const [data, dataChange] = useState();
@@ -23,6 +24,11 @@ const ProductList = () => {
           <h2>Product List</h2>
         </div>
         <div className="card-body">
+          <div className="divbtn">
+            <Link to="products/create" className="btn btn-success">
+              Add new product (+)
+            </Link>
+          </div>
           <table className="table table-bordered">
             <thead>
               <tr>
