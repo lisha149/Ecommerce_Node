@@ -36,7 +36,6 @@ const ProductList = () => {
                 <td>Category</td>
                 <td>Desription</td>
                 <td>Status</td>
-                <td>Actions</td>
               </tr>
             </thead>
             <tbody>
@@ -47,10 +46,6 @@ const ProductList = () => {
                     <td>{item.category_name}</td>
                     <td style={{ textAlign: "justify" }}>{item.description}</td>
                     <td>{item.status}</td>
-                    <td style={{ textAlign: "justify" }}>
-                      <a className="btn btn-success">Edit</a>
-                      <a className="btn btn-danger">Remove</a>
-                    </td>
                   </tr>
                 ))}
             </tbody>
