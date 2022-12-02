@@ -94,5 +94,32 @@
     "description": "chair with comfortable attached cushion ",
     "created_by": "Dom",
     "status": "out_of_stock"
+  },
+  {
+    "product_name": "Air Fryer",
+    "category_name": "Home Appliances",
+    "description": "1200MW air fryer Philips with 1 year warranty",
+    "created_by": "Sam",
+    "status": "in_stock"
+  },
+  {
+    "id": "00678",
+    "product_name": "Smiley Emoji Cushion",
+    "category_name": "Furniture",
+    "description": "Smiley Emoji cushion of diameter 50cm",
+    "created_by": "Anna",
+    "status": "out_of_stock",
+    "created_at": 1669959457149,
+    "updated_at": 1669959457149
+  },
+  {
+    "id": "0053",
+    "product_name": "In Love Emoji Cushion",
+    "category_name": "Furniture",
+    "description": "in love emoji fur cushion",
+    "created_by": "Anna",
+    "status": "in_stock",
+    "created_at": "2022-12-02T05:44:59.031Z",
+    "updated_at": "2022-12-02T05:44:59.031Z"
   }
 ]
