@@ -8,17 +8,25 @@ const ProductCreate = () => {
   const [description, setDescription] = useState("");
   const [created_by, setCreatedBy] = useState("");
   const [status, setStatus] = useState("in_stock");
+  const date = new Date();
+
+  const [created_at, setCreatedAt] = useState(date.toISOString());
+  const [updated_at, setUpdatedAt] = useState(date.toISOString());
+  const [validation, setValidation] = useState(false);
 
   const navigate = useNavigate();
 
   const submitHandler = (e) => {
     e.preventDefault();
     const data = {
+      id,
       product_name,
       category_name,
       description,
       created_by,
       status,
+      created_at,
+      updated_at,
     };
     let options = {
       method: "POST",
@@ -52,12 +60,19 @@ const ProductCreate = () => {
                 <div className="row">
                   <div className="col-lg-12 col-xs-6">
                     <div className="form-group">
-                      <label>ID</label>
+                      <label>Code</label>
                       <input
                         className="form-control"
                         value={id}
-                        disabled="disabled"
+                        required
+                        onMouseDown={(e) => setValidation(true)}
+                        onChange={(e) => setId(e.target.value)}
                       ></input>
+                      {id.length == 0 && validation && (
+                        <span className="text-danger">
+                          Enter the product code
+                        </span>
+                      )}
                     </div>
                   </div>
                   <div className="col-lg-12 col-xs-6">
@@ -65,6 +80,7 @@ const ProductCreate = () => {
                       <label>Name</label>
                       <input
                         className="form-control"
+                        required
                         value={product_name}
                         onChange={(e) => setName(e.target.value)}
                       ></input>
@@ -77,6 +93,7 @@ const ProductCreate = () => {
                       <input
                         className="form-control"
                         value={category_name}
+                        required
                         onChange={(e) => setCategory(e.target.value)}
                       ></input>
                     </div>
