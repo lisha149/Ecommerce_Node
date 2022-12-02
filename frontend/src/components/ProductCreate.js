@@ -7,7 +7,8 @@ const ProductCreate = () => {
   const [category_name, setCategory] = useState("");
   const [description, setDescription] = useState("");
   const [created_by, setCreatedBy] = useState("");
-  const [status, setStatus] = useState("in_stock");
+  const [status, setStatus] = useState("In stock");
+
   const date = new Date();
 
   const [created_at, setCreatedAt] = useState(date.toISOString());
@@ -68,7 +69,7 @@ const ProductCreate = () => {
                         onMouseDown={(e) => setValidation(true)}
                         onChange={(e) => setId(e.target.value)}
                       ></input>
-                      {id.length == 0 && validation && (
+                      {id.length === 0 && validation && (
                         <span className="text-danger">
                           Enter the product code
                         </span>
@@ -130,9 +131,9 @@ const ProductCreate = () => {
                         type="radio"
                         id="status"
                         name="status"
-                        value="in_stock"
+                        value="In stock"
                         style={{ marginLeft: 7 }}
-                        checked={status === "in_stock"}
+                        checked={status === "In stock"}
                         onChange={(e) => {
                           setStatus(e.target.value);
                         }}
@@ -142,9 +143,9 @@ const ProductCreate = () => {
                         type="radio"
                         id="status"
                         name="status"
-                        value="out_of_stock"
+                        value="Out of stock"
                         style={{ marginLeft: 10 }}
-                        checked={status === "out_of_stock"}
+                        checked={status === "Out of stock"}
                         onChange={(e) => {
                           setStatus(e.target.value);
                         }}
