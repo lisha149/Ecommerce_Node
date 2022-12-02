@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const ProductList = () => {
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
   const [searchInput, setSearchInput] = useState("");
-  console.log(searchInput);
+
+  // console.log(searchInput);
   useEffect(() => {
     fetch("http://localhost:5000/api/products")
       .then((res) => {
@@ -18,6 +19,7 @@ const ProductList = () => {
         console.log(err);
       });
   }, []);
+
   return (
     <div className="container">
       <div className="card">
@@ -25,7 +27,7 @@ const ProductList = () => {
           <h2>Product List</h2>
         </div>
         <div className="card-body">
-          <div className="d-inline">
+          <div className="btn-search">
             <div className="leftbtn">
               <Link to="products/create" className="btn btn-success">
                 Add new product (+)
@@ -43,7 +45,7 @@ const ProductList = () => {
             </div>
           </div>
 
-          <table className="table table-bordered">
+          <table className="table table-bordered table-striped">
             <thead id="table-head">
               <tr>
                 <th>Name</th>
