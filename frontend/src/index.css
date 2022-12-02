@@ -16,7 +16,7 @@
   font-weight: 500;
 }
 .text-title {
-  color: 2b2b2b;
+  color: #2b2b2b;
 }
 
 .light-color {
@@ -29,71 +29,45 @@
   align-content: center;
   max-height: 80px;
 }
-table tbody tr:nth-child(even) {
+/* table tbody tr:nth-child(even) {
   background-color: #969696;
-}
+} */
+
 /*responsive*/
 @media (max-width: 376px) {
-  .leftbtn {
-    width: 100%;
+  table {
+    border: 0;
   }
+
   table thead {
     display: none;
   }
-  table,
-  table tbody,
-  table tr,
+
+  table tr {
+    margin-bottom: 20px;
+    display: block;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 2px 2px 1px #dadada;
+  }
+  table {
+    display: flex;
+    flex-direction: row;
+  }
   table td {
     display: block;
-    width: 100%;
-  }
-  table td {
-    position: relative;
     text-align: right;
-    font-size: 10px;
+    font-size: 15px;
   }
 
-  td:nth-child(1)::before {
-    content: "Name";
-    position: absolute;
-    left: 0;
-    width: 50%;
-    padding-left: 12px;
-    font-weight: 700;
-    text-align: left;
+  table td:last-child {
+    border-bottom: 0;
   }
-  td:nth-child(2)::before {
-    content: "Category";
-    position: absolute;
-    left: 0;
-    width: 50%;
-    padding-left: 12px;
+  table td::before {
+    content: attr(data-label);
+    float: left;
     font-weight: 700;
-    text-align: left;
   }
-  td:nth-child(3)::before {
-    content: "Description";
-    position: absolute;
-    left: 0;
-    width: 30%;
-    padding-left: 12px;
-    font-weight: 700;
-    text-align: left;
-  }
-  td:nth-child(4)::before {
-    content: "Status";
-    position: absolute;
-    left: 0;
-    width: 50%;
-    padding-left: 12px;
-    font-weight: 700;
-    text-align: left;
-  }
-  td {
-    position: absolute;
-    right: 0;
-    width: 50%;
-    padding-right: 12px;
-    text-align: justify;
+  tbody {
+    line-height: normal;
   }
 }
