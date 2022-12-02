@@ -5,17 +5,17 @@
     "category_name": "Furniture",
     "description": "Key Features of marami plain Decorative Cushion Outer Material: velvet Filling Material: Cotton Height: 13 cm,Specifications of marami plain Decorative Cushion (Yellow) General External Material velvet Brand marami Type Decorative Cushion Model Name smiley pillow Filling Material Cotton Model ID CUMA2046 Color Yellow Dimensions Length 13 cm Width 13 cm Depth 4 cm",
     "created_by": "Anna Back",
-    "status": "in_stock",
+    "status": "In stock",
     "created_at": "2022-11-11T03:55:33.567Z",
     "updated_at": "2022-11-11T04:09:29.361Z"
   },
   {
     "id": 2,
-    "product_name": "SKY TRENDS White Sipper 600 ml Water Bottle",
+    "product_name": "SKYTRENDS White Sipper 600 ml Water Bottle",
     "category_name": "Home Appliances",
-    "description": "SKY TRENDS White Sipper 600 ml Water Bottle (Set of 1, White) Price: Rs. 429",
+    "description": "SKYTRENDS White Sipper 600 ml Water Bottle (Set of 1, White) Price: Rs. 429",
     "created_by": "John Doe",
-    "status": "in_stock",
+    "status": "In stock",
     "created_at": "2022-11-11T03:55:33.567Z",
     "updated_at": "2022-11-11T04:09:29.361Z"
   },
@@ -25,7 +25,7 @@
     "category_name": "Home Appliances",
     "description": "Key Features of Ohanna Sports 800 ml Water Bottle Sports Durable Water Bottle Comfortably Carry Trendy Easy Filling BPA free water bottle 100% Recyclable Designed for better utility Durable for home kitchen or personal utility",
     "created_by": "Taylor Shrm",
-    "status": "out_of_stock",
+    "status": "Out of stock",
     "created_at": "2022-11-11T03:55:33.567Z",
     "updated_at": "2022-11-11T04:09:29.361Z"
   },
@@ -35,7 +35,7 @@
     "category_name": "Women's Clothing",
     "description": "Specifications of LGC Women's Black, Pink Capri Capri Details Number of Contents in Sales Package Pack of 2 Fabric Viscose Lycra Blend Fit Regular Fly Elastic General Details Pattern Solid Ideal",
     "created_by": "Nick Swift",
-    "status": "in_stock",
+    "status": "In stock",
     "created_at": "2022-11-29T03:55:33.567Z",
     "updated_at": "2022-11-29T04:09:29.361Z"
   },
@@ -45,7 +45,7 @@
     "category_name": "Furniture",
     "description": "Furniture with a raised flat top and is supported most commonly by 1 or 4 legs, used as a surface for working at, eating from or on which to place things. ",
     "created_by": "David Brack",
-    "status": "in_stock",
+    "status": "In stock",
     "created_at": "2022-11-11T03:55:33.567Z",
     "updated_at": "2022-11-11T04:09:29.361Z"
   },
@@ -55,17 +55,9 @@
     "category_name": "Accessories",
     "description": "MTP-VD300GL-1EUDF",
     "created_by": "Sam",
-    "status": "out_of_stock",
+    "status": "Out of stock",
     "created_at": "2022-11-11T03:55:33.567Z",
     "updated_at": "2022-11-11T04:09:29.361Z"
-  },
-  {
-    "id": 7,
-    "product_name": "Butterfly Choker",
-    "category_name": "Accessories",
-    "description": "Gold Chain",
-    "created_by": "John",
-    "status": "in_stock"
   },
   {
     "id": 8,
@@ -73,7 +65,7 @@
     "category_name": "Furniture",
     "description": "Fur very soft washable blanket",
     "created_by": "Anna Back",
-    "status": "in_stock",
+    "status": "In stock",
     "created_at": "2022-11-11T03:55:33.567Z",
     "updated_at": "2022-11-11T04:09:29.361Z"
   },
@@ -83,34 +75,9 @@
     "category_name": "Furniture",
     "description": "Fur very soft washable fiber blanket",
     "created_by": "Anna Back",
-    "status": "in_stock",
+    "status": "In stock",
     "created_at": "2022-11-11T03:55:33.567Z",
     "updated_at": "2022-11-11T04:09:29.361Z"
-  },
-  {
-    "id": 10,
-    "product_name": "Gaming Chair",
-    "category_name": "Furniture",
-    "description": "chair with comfortable attached cushion ",
-    "created_by": "Dom",
-    "status": "out_of_stock"
-  },
-  {
-    "product_name": "Air Fryer",
-    "category_name": "Home Appliances",
-    "description": "1200MW air fryer Philips with 1 year warranty",
-    "created_by": "Sam",
-    "status": "in_stock"
-  },
-  {
-    "id": "00678",
-    "product_name": "Smiley Emoji Cushion",
-    "category_name": "Furniture",
-    "description": "Smiley Emoji cushion of diameter 50cm",
-    "created_by": "Anna",
-    "status": "out_of_stock",
-    "created_at": 1669959457149,
-    "updated_at": 1669959457149
   },
   {
     "id": "0053",
@@ -118,8 +85,28 @@
     "category_name": "Furniture",
     "description": "in love emoji fur cushion",
     "created_by": "Anna",
-    "status": "in_stock",
+    "status": "In stock",
     "created_at": "2022-12-02T05:44:59.031Z",
     "updated_at": "2022-12-02T05:44:59.031Z"
+  },
+  {
+    "id": "0078",
+    "product_name": "Butterfly Choker",
+    "category_name": "Accessories",
+    "description": "Crystal Gold chain size: length 32cm+10cm, ",
+    "created_by": "John",
+    "status": "In stock",
+    "created_at": "2022-12-02T07:37:18.223Z",
+    "updated_at": "2022-12-02T07:37:18.223Z"
+  },
+  {
+    "id": "00456",
+    "product_name": "Gaming Chair",
+    "category_name": "Furniture",
+    "description": "chair with comfortable attached neck and back cushion and arm resting ",
+    "created_by": "Dom",
+    "status": "In stock",
+    "created_at": "2022-12-02T07:40:59.117Z",
+    "updated_at": "2022-12-02T07:40:59.117Z"
   }
 ]
