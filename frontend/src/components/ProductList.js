@@ -50,7 +50,7 @@ const ProductList = () => {
               <tr>
                 <th>Name</th>
                 <th>Category</th>
-                <th>Desription</th>
+                <th>Description</th>
                 <th>Status</th>
               </tr>
             </thead>

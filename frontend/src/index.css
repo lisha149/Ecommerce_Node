@@ -29,6 +29,9 @@
   align-content: center;
   max-height: 80px;
 }
+tbody td {
+  text-align: left;
+}
 /* table tbody tr:nth-child(even) {
   background-color: #969696;
 } */
