@@ -6,7 +6,7 @@ import ProductCreate from "./components/ProductCreate";
 function App() {
   return (
     <div className="App">
-      <h3>Ecommerce-CRUD Operations</h3>
+      <h3>Ecommerce-Add, List and Search Products</h3>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ProductList />} exact />
