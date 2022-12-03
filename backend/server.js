@@ -83,6 +83,30 @@ app.put("/api/products/:id", (req, res) => {
     }
   );
 });
+//api to delete the product
+app.delete("/api/products/:id", (req, res) => {
+  var id = req.params.id;
+  data = fs.readFileSync(__dirname + "/" + "products.json", "utf8");
+  let products = JSON.parse(data);
+
+  products = products.filter((item) => {
+    let url = id;
+    return item.id !== url;
+  });
+  console.log(products);
+  fs.writeFile(
+    __dirname + "/" + "products.json",
+    JSON.stringify(products, null, 2),
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+        // console.log("Products Deleted Successfully");
+        res.status(201).json({ message: "Products Deleted Successfully" });
+      }
+    }
+  );
+});
 
 const PORT = 5000;
 app.listen(PORT, () =>

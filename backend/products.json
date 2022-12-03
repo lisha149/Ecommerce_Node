@@ -5,9 +5,9 @@
     "category_name": "Furniture",
     "description": "Key Features of marami plain Decorative Cushion Outer Material: velvet Filling Material: Cotton Height: 13 cm,Specifications of marami plain Decorative Cushion (Yellow) General External Material velvet Brand marami Type Decorative Cushion Model Name smiley pillow Filling Material Cotton Model ID CUMA2046 Color Yellow Dimensions Length 13 cm Width 13 cm Depth 4 cm",
     "created_by": "Anna Back",
-    "status": "Out of stock",
+    "status": "In stock",
     "created_at": "2022-11-11T03:55:33.567Z",
-    "updated_at": "2022-12-03T04:09:29.361Z"
+    "updated_at": "2022-11-11T04:09:29.361Z"
   },
   {
     "id": 2,
@@ -98,15 +98,5 @@
     "status": "In stock",
     "created_at": "2022-12-02T07:37:18.223Z",
     "updated_at": "2022-12-02T07:37:18.223Z"
-  },
-  {
-    "id": "00456",
-    "product_name": "Gaming Chair",
-    "category_name": "Furniture",
-    "description": "chair with comfortable attached neck and back cushion and arm resting ",
-    "created_by": "Dom",
-    "status": "In stock",
-    "created_at": "2022-12-02T07:40:59.117Z",
-    "updated_at": "2022-12-02T07:40:59.117Z"
   }
 ]
