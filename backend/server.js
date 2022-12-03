@@ -47,6 +47,43 @@ app.post("/api/products/create", (req, res) => {
   );
 });
 
+//api to update the products
+app.put("/api/products/:id", (req, res) => {
+  var id = req.params.id;
+  var product_name = req.body.product_name;
+  var category_name = req.body.category_name;
+  var description = req.body.description;
+  var created_by = req.body.created_by;
+  var status = req.body.status;
+  var updated_at = req.body.updated_at;
+  data = fs.readFileSync(__dirname + "/" + "products.json", "utf8");
+  let products = JSON.parse(data);
+  // console.log(products);
+  products.map((item) => {
+    if (item.id == id) {
+      item.product_name = product_name;
+      item.category_name = category_name;
+      item.description = description;
+      item.created_by = created_by;
+      item.status = status;
+      item.updated_at = updated_at;
+    }
+  });
+
+  fs.writeFile(
+    __dirname + "/" + "products.json",
+    JSON.stringify(products, null, 2),
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+        // console.log("Products Updated Successfully");
+        res.status(201).json({ message: "Products Updated Successfully" });
+      }
+    }
+  );
+});
+
 const PORT = 5000;
 app.listen(PORT, () =>
   console.log(`Server running on port :http://localhost:${PORT}`)
