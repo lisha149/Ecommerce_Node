@@ -46,6 +46,7 @@ app.post("/api/products/create", (req, res) => {
     }
   );
 });
+
 //api to get element by id
 app.get("/api/products/:id", (req, res) => {
   var id = req.params.id;
@@ -59,6 +60,7 @@ app.get("/api/products/:id", (req, res) => {
     res.status(404).json({ message: "Product Not Found" });
   }
 });
+
 //api to update the products
 app.put("/api/products/:id", (req, res) => {
   var id = req.params.id;
@@ -100,6 +102,7 @@ app.put("/api/products/:id", (req, res) => {
     res.status(404).json({ message: "Product Not Found" });
   }
 });
+
 //api to delete the product
 app.delete("/api/products/:id", (req, res) => {
   var id = req.params.id;
