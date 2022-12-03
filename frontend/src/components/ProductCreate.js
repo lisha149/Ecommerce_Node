@@ -52,14 +52,14 @@ const ProductCreate = () => {
         <div className="offset-lg-3 col-lg-6">
           <form className="container" onSubmit={submitHandler}>
             <div className="card" style={{ textAlign: "left" }}>
-              <div className="card-title">
+              <div className="card-header">
                 <h4 style={{ textAlign: "center", marginTop: "2px" }}>
                   Add Product
                 </h4>
               </div>
               <div className="card-body">
                 <div className="row">
-                  <div className="col-lg-12 col-xs-6">
+                  <div className="col-lg-12 ">
                     <div className="form-group">
                       <label>Code</label>
                       <input
@@ -76,7 +76,7 @@ const ProductCreate = () => {
                       )}
                     </div>
                   </div>
-                  <div className="col-lg-12 col-xs-6">
+                  <div className="col-lg-12 ">
                     <div className="form-group">
                       <label>Name</label>
                       <input
@@ -88,7 +88,7 @@ const ProductCreate = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-12 col-xs-6">
+                  <div className="col-lg-12 ">
                     <div className="form-group">
                       <label>Category</label>
                       <input
@@ -100,7 +100,7 @@ const ProductCreate = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-12 col-xs-6">
+                  <div className="col-lg-12 ">
                     <div className="form-group">
                       <label>Description</label>
                       <textarea
@@ -113,7 +113,7 @@ const ProductCreate = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-12 col-xs-6">
+                  <div className="col-lg-12 ">
                     <div className="form-group">
                       <label>Created By</label>
                       <input
@@ -124,7 +124,7 @@ const ProductCreate = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-12 col-xs-6">
+                  <div className="col-lg-12 ">
                     <div className="form-check">
                       Status
                       <input
@@ -161,7 +161,7 @@ const ProductCreate = () => {
                       {new Date().toLocaleDateString()}
                     </div>
                   </div>
-                  <div className="col-lg-12 col-xs-6">
+                  <div className="col-lg-12 ">
                     <div className="form-group">
                       <button className="btn btn-success" type="submit">
                         Add

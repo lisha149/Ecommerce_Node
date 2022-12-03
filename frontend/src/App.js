@@ -4,7 +4,6 @@ import ProductList from "./components/ProductList";
 import ProductCreate from "./components/ProductCreate";
 import ProductUpdate from "./components/ProductUpdate";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import PageNotFound from "./components/PageNotFound";
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </main>
-        <Footer />
       </BrowserRouter>
     </div>
   );

@@ -71,7 +71,7 @@ const ProductUpdate = () => {
         <div className="offset-lg-3 col-lg-6">
           <form className="container" onSubmit={submitHandler}>
             <div className="card" style={{ textAlign: "left" }}>
-              <div className="card-title">
+              <div className="card-header">
                 <h4 style={{ textAlign: "center", marginTop: "2px" }}>
                   Edit Product
                 </h4>
