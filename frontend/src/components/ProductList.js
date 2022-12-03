@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const ProductList = () => {
   const [data, setData] = useState([]);
   const [searchInput, setSearchInput] = useState("");
-
   // console.log(searchInput);
 
   const deleteHandler = (id) => {
