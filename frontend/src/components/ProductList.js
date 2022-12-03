@@ -39,7 +39,7 @@ const ProductList = () => {
   return (
     <div className="container">
       <div className="card">
-        <div className="card-title">
+        <div className="card-header">
           <h2>Product List</h2>
         </div>
         <div className="card-body">
