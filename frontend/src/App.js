@@ -5,6 +5,7 @@ import ProductCreate from "./components/ProductCreate";
 import ProductUpdate from "./components/ProductUpdate";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<ProductList />} exact />
             <Route path="/products/create" element={<ProductCreate />} />
             <Route path="/product/:id" element={<ProductUpdate />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </main>
         <Footer />

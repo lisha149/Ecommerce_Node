@@ -10,9 +10,9 @@
 tbody td {
   text-align: left;
 }
-/* table tbody tr:nth-child(even) {
-  background-color: #969696;
-} */
+footer {
+  font-size: 18px;
+}
 
 /*responsive*/
 @media (max-width: 800px) {
@@ -46,9 +46,12 @@ tbody td {
   table td::before {
     content: attr(data-label);
     float: left;
-    font-weight: 700;
+    font-weight: 500;
   }
   tbody {
     line-height: normal;
+  }
+  footer {
+    font-size: 15px;
   }
 }

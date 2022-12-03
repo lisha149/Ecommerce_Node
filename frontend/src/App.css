@@ -3,7 +3,20 @@
 .App {
   text-align: center;
 }
-
+.text-dark-md {
+  color: #2b2b2b;
+  font-weight: 500;
+  font-size: 18px;
+}
+.text-light {
+  color: #969696;
+}
+.bkg-dark {
+  background-color: #2b2b2b;
+}
+.bkg-light {
+  background-color: #969696;
+}
 .btn {
   margin: 2px;
 }
@@ -13,14 +26,6 @@
 .rightbtn {
   float: right;
 }
-
-thead {
-  background-color: #969696;
-  color: #2b2b2b;
-  font-size: 18px;
-  font-weight: 500;
-}
-
 tbody {
   font-size: 18px;
 }

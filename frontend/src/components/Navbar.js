@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-dark" style={{ backgroundColor: "#969696" }}>
+    <nav className="navbar navbar-dark text-dark-md bkg-light">
       <a
         className="navbar-brand"
         href="/"

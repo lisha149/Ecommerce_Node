@@ -62,7 +62,7 @@ const ProductList = () => {
           </div>
 
           <table className="table table-bordered table-striped">
-            <thead id="table-head">
+            <thead className="text-dark-md bkg-light">
               <tr>
                 <th>Name</th>
                 <th>Category</th>
