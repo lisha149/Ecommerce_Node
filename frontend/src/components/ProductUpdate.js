@@ -9,7 +9,7 @@ const ProductUpdate = () => {
   const [category_name, setCategory] = useState("");
   const [description, setDescription] = useState("");
   const [created_by, setCreatedBy] = useState("");
-  const [status, setStatus] = useState("In stock");
+  const [status, setStatus] = useState("");
 
   const date = new Date();
 
