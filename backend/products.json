@@ -80,16 +80,6 @@
     "updated_at": "2022-11-11T04:09:29.361Z"
   },
   {
-    "id": "0053",
-    "product_name": "In Love Emoji Cushion",
-    "category_name": "Furniture",
-    "description": "in love emoji fur cushion",
-    "created_by": "Anna",
-    "status": "In stock",
-    "created_at": "2022-12-02T05:44:59.031Z",
-    "updated_at": "2022-12-02T05:44:59.031Z"
-  },
-  {
     "id": "0078",
     "product_name": "Butterfly Choker",
     "category_name": "Accessories",
@@ -98,5 +88,45 @@
     "status": "In stock",
     "created_at": "2022-12-02T07:37:18.223Z",
     "updated_at": "2022-12-03T15:36:00.075Z"
+  },
+  {
+    "id": "00898",
+    "product_name": "SanDisk Ultra 128GB SDXC UHS-I Memory Card up to 80MB/s",
+    "category_name": "Electronics",
+    "description": "Ultra-fast cards (2) to take better pictures and Full HD videos (1) with your compact to mid-range point-and-shoot cameras and camcorders",
+    "created_by": "Brent ",
+    "status": "In stock",
+    "created_at": "2022-12-03T15:41:52.549Z",
+    "updated_at": "2022-12-03T15:41:52.549Z"
+  },
+  {
+    "id": "005345",
+    "product_name": "CAN USB FD Adapter (GC-CAN-USB-FD)",
+    "category_name": "Electronics",
+    "description": "Monitor a CAN network, write a CAN program and communicate with industrial, medical, automotive or other CAN based device.",
+    "created_by": "Lexi Rivera",
+    "status": "In stock",
+    "created_at": "2022-12-03T15:42:54.787Z",
+    "updated_at": "2022-12-03T15:42:54.787Z"
+  },
+  {
+    "id": "00567",
+    "product_name": "Apple AirPods with Charging Case (Wired)",
+    "category_name": "Electronics",
+    "description": "irPods with Charging Case: More than 24 hours listening time, up to 18 hours talk time",
+    "created_by": "Dom Brack",
+    "status": "In stock",
+    "created_at": "2022-12-03T15:44:22.116Z",
+    "updated_at": "2022-12-03T15:44:22.116Z"
+  },
+  {
+    "id": "00987",
+    "product_name": "Kauffman Orchards Homegrown McIntosh Apples",
+    "category_name": "Food",
+    "description": "McIntosh is a pretty red/green apple with white flesh Homegrown in Kauffman's orchard in healthy Lancaster County soil",
+    "created_by": "Soffie",
+    "status": "In stock",
+    "created_at": "2022-12-03T15:45:26.124Z",
+    "updated_at": "2022-12-03T15:45:26.124Z"
   }
 ]
