@@ -46,7 +46,19 @@ app.post("/api/products/create", (req, res) => {
     }
   );
 });
-
+//api to get element by id
+app.get("/api/products/:id", (req, res) => {
+  var id = req.params.id;
+  data = fs.readFileSync(__dirname + "/" + "products.json", "utf8");
+  let products = JSON.parse(data);
+  const isProductAvailable = products.find((item) => item.id == id);
+  if (isProductAvailable) {
+    const product = isProductAvailable;
+    res.status(200).send(product);
+  } else {
+    res.status(404).json({ message: "Product Not Found" });
+  }
+});
 //api to update the products
 app.put("/api/products/:id", (req, res) => {
   var id = req.params.id;
