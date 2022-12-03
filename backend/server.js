@@ -58,30 +58,35 @@ app.put("/api/products/:id", (req, res) => {
   var updated_at = req.body.updated_at;
   data = fs.readFileSync(__dirname + "/" + "products.json", "utf8");
   let products = JSON.parse(data);
+  const isProductAvailable = products.find((item) => item.id == id);
   // console.log(products);
-  products.map((item) => {
-    if (item.id == id) {
-      item.product_name = product_name;
-      item.category_name = category_name;
-      item.description = description;
-      item.created_by = created_by;
-      item.status = status;
-      item.updated_at = updated_at;
-    }
-  });
-
-  fs.writeFile(
-    __dirname + "/" + "products.json",
-    JSON.stringify(products, null, 2),
-    (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-        // console.log("Products Updated Successfully");
-        res.status(201).json({ message: "Products Updated Successfully" });
+  if (isProductAvailable) {
+    products.map((item) => {
+      if (item.id == id) {
+        item.product_name = product_name;
+        item.category_name = category_name;
+        item.description = description;
+        item.created_by = created_by;
+        item.status = status;
+        item.updated_at = updated_at;
       }
-    }
-  );
+    });
+
+    fs.writeFile(
+      __dirname + "/" + "products.json",
+      JSON.stringify(products, null, 2),
+      (err) => {
+        if (err) {
+          console.log(err);
+        } else {
+          // console.log("Products Updated Successfully");
+          res.status(201).json({ message: "Products Updated Successfully" });
+        }
+      }
+    );
+  } else {
+    res.status(404).json({ message: "Product Not Found" });
+  }
 });
 //api to delete the product
 app.delete("/api/products/:id", (req, res) => {
@@ -89,23 +94,27 @@ app.delete("/api/products/:id", (req, res) => {
   data = fs.readFileSync(__dirname + "/" + "products.json", "utf8");
   let products = JSON.parse(data);
 
-  products = products.filter((item) => {
-    let url = id;
-    return item.id !== url;
-  });
-  console.log(products);
-  fs.writeFile(
-    __dirname + "/" + "products.json",
-    JSON.stringify(products, null, 2),
-    (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-        // console.log("Products Deleted Successfully");
-        res.status(201).json({ message: "Products Deleted Successfully" });
+  const isProductAvailable = products.find((item) => item.id == id);
+  if (isProductAvailable) {
+    products = products.filter((item) => {
+      return item.id !== id;
+    });
+    console.log(products);
+    fs.writeFile(
+      __dirname + "/" + "products.json",
+      JSON.stringify(products, null, 2),
+      (err) => {
+        if (err) {
+          // console.log(err);
+        } else {
+          // console.log("Products Deleted Successfully");
+          res.status(201).json({ message: "Products Deleted Successfully" });
+        }
       }
-    }
-  );
+    );
+  } else {
+    res.status(404).json({ message: "Product Not Found" });
+  }
 });
 
 const PORT = 5000;
