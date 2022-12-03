@@ -11,10 +11,6 @@ tbody td {
   text-align: left;
 }
 
-footer {
-  font-size: 18px;
-}
-
 /*responsive*/
 @media (max-width: 800px) {
   table {
