@@ -15,11 +15,12 @@
 }
 
 thead {
-  background-color: #2b2b2b;
-  color: #969696;
-  font-size: 20px;
-  font-weight: 700;
+  background-color: #969696;
+  color: #2b2b2b;
+  font-size: 18px;
+  font-weight: 500;
 }
+
 tbody {
   font-size: 18px;
 }

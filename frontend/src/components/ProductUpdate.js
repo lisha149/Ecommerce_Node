@@ -64,7 +64,7 @@ const ProductUpdate = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [id]);
   return (
     <div>
       <div className="row">

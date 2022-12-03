@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ProductList = () => {
   const [data, setData] = useState([]);
   const [searchInput, setSearchInput] = useState("");
 
   // console.log(searchInput);
-  const navigate = useNavigate;
 
   const deleteHandler = (id) => {
     if (window.confirm("Are you sure you want to delete?")) {
@@ -100,6 +99,7 @@ const ProductList = () => {
                         <a
                           className="btn btn-danger"
                           onClick={() => deleteHandler(item.id)}
+                          href="#"
                         >
                           Delete
                         </a>
