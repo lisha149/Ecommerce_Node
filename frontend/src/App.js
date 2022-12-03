@@ -7,7 +7,7 @@ import ProductUpdate from "./components/ProductUpdate";
 function App() {
   return (
     <div className="App">
-      <h3>Ecommerce-Add, List and Search Products</h3>
+      <h1>Ecommerce-Add, List, Update, Delete and Search Products</h1>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ProductList />} exact />
