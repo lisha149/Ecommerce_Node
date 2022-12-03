@@ -1,11 +1,28 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ProductList = () => {
   const [data, setData] = useState([]);
   const [searchInput, setSearchInput] = useState("");
 
   // console.log(searchInput);
+  const navigate = useNavigate;
+
+  const deleteHandler = (id) => {
+    if (window.confirm("Are you sure you want to delete?")) {
+      let options = {
+        method: "Delete",
+      };
+      fetch(`http://localhost:5000/api/products/${id}`, options)
+        .then((res) => {
+          alert("Product Deleted Successfully.");
+          window.location.reload();
+        })
+        .catch((err) => {
+          console.log(err.message);
+        });
+    }
+  };
   useEffect(() => {
     fetch("http://localhost:5000/api/products")
       .then((res) => {
@@ -52,6 +69,7 @@ const ProductList = () => {
                 <th>Category</th>
                 <th>Description</th>
                 <th>Status</th>
+                <th>Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -72,6 +90,20 @@ const ProductList = () => {
                       <td data-label="Category">{item.category_name}</td>
                       <td data-label="Description">{item.description}</td>
                       <td data-label="Status">{item.status}</td>
+                      <td data-label="Actions">
+                        <a
+                          href={`/product/${item.id}`}
+                          className="btn btn-success"
+                        >
+                          Edit
+                        </a>
+                        <a
+                          className="btn btn-danger"
+                          onClick={() => deleteHandler(item.id)}
+                        >
+                          Delete
+                        </a>
+                      </td>
                     </tr>
                   ))}
             </tbody>
