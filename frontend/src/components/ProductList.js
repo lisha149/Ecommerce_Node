@@ -29,13 +29,12 @@ const ProductList = () => {
       })
       .then((response) => {
         setData(response);
-        // console.log(response);
+        // console.log(response)
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
-
   return (
     <div className="container">
       <div className="card">
@@ -73,6 +72,21 @@ const ProductList = () => {
             </thead>
             <tbody>
               {data &&
+              data.filter(
+                (data) =>
+                  data.product_name
+                    .toLowerCase()
+                    .includes(searchInput.toLowerCase()) ||
+                  data.category_name
+                    .toLowerCase()
+                    .includes(searchInput.toLowerCase())
+              ).length == 0 ? (
+                <tr>
+                  <td colSpan={8} className="text-center mb-0">
+                    ---------No Data Found---------
+                  </td>
+                </tr>
+              ) : (
                 data
                   .filter(
                     (data) =>
@@ -105,7 +119,8 @@ const ProductList = () => {
                         </a>
                       </td>
                     </tr>
-                  ))}
+                  ))
+              )}
             </tbody>
           </table>
         </div>
