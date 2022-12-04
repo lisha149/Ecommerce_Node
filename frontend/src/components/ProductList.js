@@ -82,7 +82,7 @@ const ProductList = () => {
               ).length == 0 ? (
                 <tr>
                   <td colSpan={8} className="text-center mb-0">
-                    ---------No Data Found---------
+                    ---------No Product Found---------
                   </td>
                 </tr>
               ) : (
